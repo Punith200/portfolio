@@ -1,0 +1,422 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #eadddd;
+  }
+  
+  .header {
+    background-color: #091630;
+    color: #dad2e9;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .word {
+    color: rgb(52, 180, 223);
+  }
+  .navbar {
+    margin-top: 20px;
+  }
+  
+  .navbar a {
+    color: #e7eaef;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  .Home {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+  }
+  
+  .home-content {
+    flex: 1;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  .change-Text {
+    margin-top: 20px;
+  }
+  
+  .word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px); /* Initial position */
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .word.active {
+    opacity: 1;
+    transform: translateY(0); /* Final position */
+  }
+  
+  
+  @keyframes changeText {
+    0%, 25% {
+      opacity: 0;
+    }
+    30%, 100% {
+      opacity: 1;
+    }
+  }
+  
+  p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  .info-box {
+    margin-top: 20px;
+  }
+  
+  .email-info h5,
+  .email-info h6 {
+    font-weight: bold;
+  }
+  
+  .email-info span {
+    display: block;
+  }
+  
+  .btn-box {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3688d9;
+    color: #07365f;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+  
+  .btn:last-child {
+    margin-right: 0;
+  }
+  
+  .home-sci {
+    margin-top: 20px;
+  }
+  
+  .home-sci a {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .home-image {
+    flex: 1;
+  }
+  
+  .img-box  img {
+    max-width: 45%;
+    height: auto;
+  }
+  h5{
+font-size: 25px;  
+}
+h6{
+    font-size: 25px;
+}
+span{
+    cursor: pointer;
+}
+.home-image img {
+    width: 50%; 
+    height: auto; 
+  }
+  
+
+
+
+
+@keyframes changeBackgroundColor {
+    0% {
+      background-color: #ff5733; 
+    }
+    25% {
+      background-color: #33ff57; 
+    }
+    50% {
+      background-color: #5733ff; 
+    }
+    75% {
+      background-color: #ff33b8; 
+    }
+    100% {
+      background-color: #ff5733; 
+    }
+  }
+  
+  
+  body {
+    animation: changeBackgroundColor 5s linear infinite; 
+    background-color: #ff5733; 
+    color: #333;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .about-imag3 {
+    width: 200px; 
+    height: 150px; 
+}
+
+.Contact {
+  background-color: #f7f7f7;
+  padding: 60px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3688d9;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.btn:hover {
+  background-color: #07365f;
+}
+
+.About {
+  background-color: #a4c2ec;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.about-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+}
+
+
+.about-content {
+  flex: 1;
+  max-width: 50%;
+  text-align: center;
+}
+
+
+#about-header {
+  font-size: 36px;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+
+.About p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+
+.About a {
+  text-decoration: none;
+  color: #0e0f10;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.About a:hover {
+  color: #07365f;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 70%; 
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3688d9;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.download-button:hover {
+  background-color: #07365f;
+}
+
+
+.Projects {
+  background-color: #f7f7f7;
+  padding: 60px;
+  text-align: center;
+}
+
+
+.project {
+  margin-bottom: 40px;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-details {
+  margin-top: 20px;
+}
+
+.project-details h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-details p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.project img {
+  max-width: 200px; 
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-section {
+  background-color: #33ff57;
+  margin-bottom: 20px; 
+  border: 1px solid #8a63de;
+  padding: 20px;  
+  border-radius: 10px; 
+}
+
+
+.project img {
+  max-width: 200px; 
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+/* Style the skills section */
+.Skills {
+  background-color: #f7f7f7;
+  padding: 60px;
+  text-align: center;
+}
+
+/* Style the skill bars */
+.Skill {
+  margin-bottom: 40px;
+}
+
+.skill-label {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-progress {
+  width: var(--skill-percent); /* Use the custom property for width */
+  height: 100%;
+  background-color: #3688d9;
+  border-radius: 10px;
+}
+
+/* Style the skills percentage text */
+.skill-percent {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* Add hover effect */
+.Skill:hover .skill-bar .skill-progress {
+  animation: none; /* Remove animation on hover */
+  width: var(--skill-percent); /* Set width to the skill percentage */
+}
